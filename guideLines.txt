@@ -1,0 +1,14 @@
+########### this is a project doen by html and sass ###########
+
+
+
+    # you should at least have a rought outline for small project
+    # you definetely need a well thought through design for larger projects
+    # if you need to use third party libraries use a dependency manager like node for JS development and composer  for php development
+    # you need to think before implementing solutions
+        - what algoritms and solutions to use for our program 
+        - which third party libs are NEEDED for this project and are they easy to use AND which ones are unnecessary
+        - design an easily managable file directory
+        - use the right way and technology for storing data 
+        - design a good architecture for your database    
+    #the codebase must be readbale easily understandable and maintainable
