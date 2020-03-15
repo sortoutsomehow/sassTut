@@ -1,0 +1,24 @@
+  @import "../abstracts/variables";
+
+  .heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+  
+    &--main {
+      display: block;
+      font-weight: 400;
+      font-size: 6rem;
+      letter-spacing: 3.5rem;
+      animation: moveInLeft ease-out 1s;
+    }
+  
+    &--sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1.74rem;
+      animation: moveInRight ease-out 1s;
+    }
+  }
+  
