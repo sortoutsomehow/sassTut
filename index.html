@@ -16,6 +16,28 @@
 
 <body>
     <!-- implementing BEM namign system --block --element --modifier -->
+
+    <!-- navigation -->
+    <div class="navigation">
+        <input type="checkbox" class="anvigation__checkbox" id="navi-toggle" style="display: none;">
+
+        <label for="navi-toggle" class="navigation__button" id="nav-bt">
+            <span class="navigation__icon"></span>
+        </label>
+
+        <div class="navigation__background" id="nav-bg">&nbsp;</div>
+
+        <nav class="navigation__nav" id="main-nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> About Natous</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span> Your Benefits</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span> Popular Tours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span> Stories</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span> Book now</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <header class="header">
         <div class="header__logo-box">
             <img src="img/logo-white.png" alt="logo" class="header__logo">
@@ -315,7 +337,49 @@
                 </div>
             </div>
         </section>
+        
     </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="img/logo-green-1x.png" alt="logo">
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Carriers</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Built by <a href="#" class="footer__link">WebyMasters</a> &copy; 2020
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/nat-8.jpg" alt="Tour Photo" class="popup__img">
+                <img src="img/nat-9.jpg" alt="Tour Photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <h2 class="heading-secondary">Start booking now</h2>
+                <h3 class="headign-tertiary">Important &ndash; please read the terms before booking</h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perferendis corrupti quod recusandae illo ea quam quia aliquam repudiandae nulla eos beatae ad aperiam, amet aspernatur commodi iste dolor? Modi qui quisquam enim, accusamus reiciendis suscipit! Hic earum aliquid quo, a asperiores consequatur, beatae vitae aspernatur totam maiores id itaque saepe? Voluptate odio soluta numquam aperiam, labore animi temporibus vitae ratione architecto tempora rem qui recusandae porro debitis, fugit beatae nostrum libero possimus corporis maiores? Cupiditate illo, iste fugit ipsam amet illum vitae quibusdam temporibus aut eos cum, quos ad. Recusandae minima deserunt eligendi id est ab, nobis asperiores eveniet!
+                </p>
+                <a href="#" class="btn btn--green">Book now</a>
+            </div>
+        </div>
+    </div>
     <!-- GRID TEST 
         <section class="grid-test">
             <div class="row">
@@ -352,7 +416,17 @@
 
 
 
+<script>
+   document.getElementById("nav-bt").addEventListener('click', ()=>{
+        console.log('click');
+        document.getElementById('nav-bg').classList.toggle('navigation__show-nav-bg');
 
+        document.getElementById('main-nav').classList.toggle('navigation__show-nav-list');
+
+    });
+
+
+</script>
 
 </body>
 

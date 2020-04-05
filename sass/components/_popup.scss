@@ -1,0 +1,44 @@
+.popup{
+    width: 100vw;
+    height: 100vh;
+    // position: absolute;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba($color-black, .8);
+    z-index: 2500;
+
+    &__content{
+        @include deadCenter;
+        width: 75%;
+        background-color: $color-white;
+        box-shadow: 0 2rem 4rem  #5f5f5fcc;
+        border-radius: 3px;
+        display: table;
+        overflow: hidden;
+        
+    }
+
+    &__left{
+        width: 33.3333333%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    &__right{
+        width: 66.6666666%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+
+    }
+    &__img{
+        display: block;
+        width: 100%;
+        // height: fit-content;
+    }
+
+    &__text{
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+    }
+}
