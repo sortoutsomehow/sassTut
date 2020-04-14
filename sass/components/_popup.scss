@@ -22,11 +22,20 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .5s .2s;
+
+        @include respond(phone){
+            display: block;
+            height: 300px;
+            overflow: scroll;
+        }
     }
 
     &__left {
         width: 33.333333%;
         display: table-cell;
+        @media (max-width: 1500px){
+            display: none;
+        }
     }
 
     &__right {
@@ -57,6 +66,15 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
+
+        @include respond(tab-land){
+            column-count: 1;
+        }
+        @include respond(phone){
+            height: 100px;
+            overflow: hidden;
+        }
+
     }
 
     //Open states

@@ -34,6 +34,9 @@ breakpoint argument choices
 we wanna use relative units 
 rem doesn't work well with media queries so 
 we will use {em}
+
+
+Order base + typogrophy > general layout + grid > components
 */
 @mixin respond($breakpoint){
     @if $breakpoint == phone{
